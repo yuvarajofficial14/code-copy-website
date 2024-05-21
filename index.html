@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Pannura website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            margin-right: 10px;
+        }
+        select {
+            width: 100%;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Code AH copy panna file a click panni aprom *load selected file* kudu then copy or download.  </h1>
+<h2>multiple file ku ctrl HOLD panni **load selected file** then copy or download. </h2>
+<select id="fileSelector" multiple></select><br>
+<textarea id="codeArea" readonly></textarea><br>
+<button onclick="loadSelectedFiles()">Load Selected Files</button>
+<button onclick="copyToClipboard()">Copy to Clipboard</button>
+<button onclick="downloadFile()">Download as File</button>
+
+<script>
+// Function to fetch file list (this would usually be handled server-side)
+const files = ['example1.txt', 'example2.txt', 'example3.txt','example4a.txt','example4b.txt']; // Sample file list
+
+function populateFileSelector() {
+    const fileSelector = document.getElementById('fileSelector');
+    files.forEach(file => {
+        const option = document.createElement('option');
+        option.value = file;
+        option.textContent = file;
+        fileSelector.appendChild(option);
+    });
+}
+
+function loadSelectedFiles() {
+    const fileSelector = document.getElementById('fileSelector');
+    const codeArea = document.getElementById('codeArea');
+    codeArea.value = ''; // Clear previous content
+
+    const selectedFiles = Array.from(fileSelector.selectedOptions).map(option => option.value);
+
+    selectedFiles.forEach(file => {
+        fetch(`snippets/${file}`)
+            .then(response => response.text())
+            .then(data => {
+                codeArea.value += `// Content of ${file}\n${data}\n\n`;
+            })
+            .catch(error => {
+                console.error('Error loading the snippet:', error);
+            });
+    });
+}
+
+function copyToClipboard() {
+    const codeArea = document.getElementById('codeArea');
+    codeArea.select();
+    document.execCommand('copy');
+    alert('Code copied to clipboard!');
+}
+
+function downloadFile() {
+    const code = document.getElementById('codeArea').value;
+    const blob = new Blob([code], { type: 'text/plain' });
+    const anchor = document.createElement('a');
+    anchor.download = 'snippets.txt';
+    anchor.href = window.URL.createObjectURL(blob);
+    anchor.target = '_blank';
+    anchor.style.display = 'none';
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+}
+
+// Populate the file selector when the page loads
+window.onload = populateFileSelector;
+</script>
+
+</body>
+</html>

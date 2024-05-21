@@ -1,0 +1,138 @@
+
+HOME.HTML
+<html>
+<head>
+<title>Home - States of India!!!</title>
+</head>
+<body bgcolor="gold">
+<h1><u><center>Republic of India</center></u></h1>
+<p>
+India is the Seventh Lagest country in the world by geographical area, the secondmost
+populous country with over 1.2 billion people, and the populus democracy in theworld. India
+is a federal constitutional republic with a parliamentry democracy consistingof 28 states and 7
+union Terriories.
+</p>
+<center>
+<img align="center" size="100" src="IndiaMap.jpg" usemap="#india"/>
+<map name="india">
+<area shape="circle" coords="160,340,20" href="ANDHRAPRADESH.html">
+<area shape="circle" coords="120,440,10" href="KERALA.html">
+<area shape="circle" coords="110,370,20" href=" KARNATAKA.html">
+<area shape="circle" coords="140,420,20" href="TAMILNADU.html">
+</map></center>
+<h2> Features</h2>
+<ul>
+<li><b>Population</b> - 1,028,783,343(2001 census).
+<li><b>Capital</b> - New Delhi
+<li><b>Largest City</b> - Mumbai
+<li><b>Currency</b> - Indian Rupee
+<li><b>Time Format</b> - IST (UTC + 5:30)
+<li><b>NAtion Sport</b> - Hockey
+<li><b>Current PM</b> - Manmohan Singh
+<li><b>Current President</b> - Prathiba Patil</li></ul>
+<h2>
+<b>To view details of states please click on the specified area in the map !!!</b>
+</h2>
+</body>
+</html>
+
+
+
+
+ANDHRAPRADESH.HTML
+
+<html>
+<head><title>Andhra Pradesh - India</title></head>
+<body bgcolor="tan">
+<h1><center>Andhra Pradesh</center></h1>
+<h3>A.P., is a state situated on the southeastern coast of India. It is
+India's fourth largest state by area and fifth largest by population.</h3>
+<h3>
+<ul>
+<li>Districts<i> - 23</i>
+<li>Capital City<i> - Hyderabad</i>
+<li>Largest City<i> - Hyderabad</i>
+<li>Governor<i> - E. S. L. Narasimhan</i>
+<li>Chief Minister<i> - N. Kiran Kumar Reddy</i>
+<li>Population<i> - 78,323,330</i>
+<li>Tourist spots<i> - Tirumala Tirupati, Charminar, Golconda Fort,
+Chandragiri, Chowmahalla Place, Falaknuma Palace etc.,</i>
+</ul>
+<a href="Home.html">back</a>
+</body>
+</html>
+
+
+
+
+KARNATAKA.HTML
+
+<html>
+<head><title>Karnataka - India</title></head>
+<body bgcolor="wheat">
+<h1><center>Karnataka</center></h1>
+<h3>
+<ul>
+<li>Districts<i> - 30</i>
+<li>Capital City<i> - Bangalore</i>
+<li>Largest City<i> - Bangalore</i>
+<li>Governor<i>- Hansraj Bhardwaj</i>
+<li>Chief Minister<i> - D. V. Sadananda Gowda</i>
+<li>Population<i> - 61,130,704</i>
+<li>Tourist spots<i> - Gol Gumbaz, Mysore Palace, Keshava Temple etc.,</i>
+</ul></h3>
+<a href="Home.html">back</a>
+</body>
+</html>
+
+
+
+
+KERALA.HTML
+
+<html>
+<head><title>Kerala - India</title></head>
+<body bgcolor="indianred">
+<h1><center>Kerala</center></h1>
+<h3>
+<ul>
+<li>Districts<i> - 14</i>
+<li>Capital City<i> - Thiruvanandapuram</i>
+<li>Largest City<i> - Thiruvanandapuram</i>
+<li>Governor<i> - Hansraj Bhardwaj</i>
+<li>Chief Minister<i> -Oommen Chandy </i>
+<li>Population<i> - 33,387,677</i>
+<li>Tourist spots<i>Edakkal Caves, Palayur, Kovalam Beach,Munnar, Kochi, Alapuzha etc.,</i>
+</ul>
+</h3>
+<a href="Home.html">Back</a>
+</body>
+</html>
+
+
+
+
+TAMILNADU.HTML
+
+<html>
+<head><title>Tanil Nadu - India</title></head>
+<body bgcolor="palegreen">
+<h1><center>Tamil Nadu</center></h1>
+<h3>is one of the 28 states of India. Its capital and largest city is Chennai.
+Tamil Nadu lies in the southernmost part of the Indian Peninsula and
+is bordered by the States of puducherry, Kerala, Karnataka, Andha Pradesh.
+</h3>
+<h3>
+<ul>
+<li>Districts<i> - 32</i>
+<li>Capital City<i> - Chennai</i>
+<li>Largest City<i> - Chennai</i>
+<li>Governor<i> - Konijeti Rosaiah</i>
+<li>Chief Minister<i> - Jayalalithaa</i>
+<li>Population<i> - 72,138,958</i>
+<li>Tourist spots<i> - Mamallapuran, Ooty, Kodaikanal, Marina,
+Mudurai Meenakshi Amman Temple, Thanjavur etc.,</i>
+</ul>
+<a href="Home.html">back</a>
+</body>
+</html>
