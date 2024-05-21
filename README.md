@@ -1,2 +1,2 @@
 # code-copy-website
-summa cheat  for copy panna website
+copy pannarathuku website
