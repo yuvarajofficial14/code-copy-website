@@ -1,0 +1,24 @@
+import csv
+hyp=['&','&','&','&','&','&']
+with open('table.csv') as csvg:
+red=csv.reader(csvg)
+print(red)
+list=[]
+for i in red:
+print(i)
+if i[len(i)-1].upper()=='YES':
+list.append(i)
+for i in list:
+print(i)
+a=[]
+j=0
+for i in range(6):
+a.append(list[j][i])
+hyp=a
+for i in range(3):
+for j in range(6):
+if hyp[j]!=list[i][j]:
+hyp[j]='?'
+else:
+m=1
+print(hyp)
